@@ -873,4 +873,235 @@ section {
     aspect-ratio: 16 / 9;
   }
 }
+/* IMAGEM PRINCIPAL — PORTUGAL */
+
+.hero-image {
+  min-height: 0;
+  overflow: hidden;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+}
+
+.foto-hero {
+  display: block;
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 800px) {
+  .foto-hero {
+    height: 300px;
+  }
+}
+
+/* SEGUNDA SEÇÃO — CONHEÇA PORTUGAL */
+
+.portugal-foto {
+  margin: 0;
+  min-height: 0;
+  background: transparent;
+}
+
+.foto-portugal {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.legenda-imagem {
+  margin-top: 10px;
+  color: var(--text-light);
+  font-size: 0.82rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  .foto-portugal {
+    height: 260px;
+  }
+}
+
+/* AJUSTE DA IMAGEM — CASTELO DE GUIMARÃES */
+
+.historia-foto {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 20px;
+}
+
+.historia-foto img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.historia-foto .legenda-imagem {
+  margin-top: 8px;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* QUADRO INFORMATIVO — CONHEÇA PORTUGAL */
+
+.portugal-info {
+  margin-top: 24px;
+  padding: 22px;
+  background: #f5f8f5;
+  border-left: 4px solid #006633;
+  border-radius: 10px;
+}
+
+.portugal-info h3 {
+  margin: 0 0 16px;
+  color: #006633;
+  font-size: 1.15rem;
+}
+
+.portugal-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+}
+
+.portugal-info-grid p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #344054;
+}
+
+.portugal-info-grid strong {
+  color: #1f2933;
+}
+
+@media (max-width: 600px) {
+  .portugal-info {
+    padding: 18px;
+  }
+
+  .portugal-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ALINHAMENTO DA SEÇÃO CONHEÇA PORTUGAL */
+
+#sobre .about-grid {
+  align-items: start;
+}
+
+#sobre .about-image,
+#sobre .portugal-foto {
+  align-self: start;
+}
+
+/* CULTURA — FOTO E LINK DO FADO */
+
+.cultura-card .historia-foto {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 22px;
+}
+
+.cultura-card .historia-foto img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cultura-card .legenda-imagem {
+  margin-top: 9px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.link-fado {
+  color: #006633;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.link-fado:hover {
+  color: #DA291C;
+}
+
+/* CORREÇÃO DO ENQUADRAMENTO — PORTUGAL */
+
+#sobre .portugal-foto {
+  height: auto;
+  overflow: visible;
+}
+
+#sobre .portugal-foto .foto-portugal {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+/* PORTUGAL E BRASIL — ORGANIZAÇÃO DAS COLUNAS */
+
+#brasil .brasil-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+#brasil .brasil-coluna-visual,
+#brasil .brasil-coluna-texto {
+  min-width: 0;
+}
+
+#brasil .brasil-foto {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+}
+
+#brasil .brasil-foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+#brasil .legenda-imagem {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* VERSÃO PARA CELULAR */
+
+@media (max-width: 768px) {
+  #brasil .brasil-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+
+
 
