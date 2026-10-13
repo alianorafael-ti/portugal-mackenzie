@@ -1102,6 +1102,99 @@ section {
   }
 }
 
+/* REFERÊNCIAS EXPANSÍVEIS */
+
+.referencias {
+  padding: 20px 0 32px;
+  background: #f7f9f7;
+}
+
+.referencias-detalhes {
+  border-top: 1px solid #dce5dc;
+  border-bottom: 1px solid #dce5dc;
+}
+
+.referencias-detalhes summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 4px;
+  cursor: pointer;
+  color: #006633;
+  font-weight: 600;
+  list-style: none;
+}
+
+.referencias-detalhes summary::-webkit-details-marker {
+  display: none;
+}
+
+.referencias-icone::before {
+  content: "+";
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.referencias-detalhes[open] .referencias-icone::before {
+  content: "−";
+}
+
+.referencias-conteudo {
+  padding: 4px 4px 24px;
+}
+
+.referencias-conteudo p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.referencias-conteudo ul {
+  padding-left: 22px;
+}
+
+.referencias-conteudo li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.referencias-conteudo a {
+  color: #006633;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.referencias-conteudo a:hover {
+  color: #da291c;
+}
+/* AJUSTE FINAL — FONTES E REFERÊNCIAS */
+
+#referencias {
+  background: #f7f9f7;
+  padding: 20px 0;
+}
+
+#referencias .container {
+  width: 100%;
+}
+
+#referencias .referencias-detalhes {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  background: transparent;
+  border-top: 1px solid #dce5dc;
+  border-bottom: 1px solid #dce5dc;
+}
+
+#referencias .referencias-detalhes summary {
+  padding: 18px 4px;
+}
+
+#referencias .referencias-conteudo {
+  padding: 10px 4px 24px;
+}
+
 
 
 
